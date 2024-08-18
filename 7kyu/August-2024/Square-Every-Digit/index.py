@@ -5,6 +5,25 @@
 # Happy Coding!
 
 def square_digits(num):
-    print(num)
+    newList = []
+    digits = str(num)
+    digits2 = [*digits]
+    digits3 = list(map(int, digits2))
 
-square_digits(9)
+    for i in digits3:
+        newList.append(i**2)
+
+    x = int(''.join(map(str, newList)))
+    print(x)
+
+    return x
+
+square_digits(234)
+
+# Best Practice:
+
+# def square_digits(num):
+#     ret = ""
+#     for x in str(num):
+#         ret += str(int(x)**2)
+#     return int(ret)
