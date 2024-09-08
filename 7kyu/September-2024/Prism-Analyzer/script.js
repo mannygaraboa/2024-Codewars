@@ -16,5 +16,15 @@
 //     2. The sum s is an integer in the range 4 ≤ 𝑠 ≤ 1000
 
 function prismProperties(s) {
-  
+
+    let vertices = 0;
+    let edges = 0;
+    let faces = 0;
+    let base = 0;
+
+
+
+    return [vertices, edges, faces, base];
 }
+
+prismProperties(17);
